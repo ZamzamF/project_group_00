@@ -10,6 +10,7 @@
     --acc-grad-p-1: 30%;
   }
 }
+
 @media only screen and (min-width: 480px) {
   :root {
     --acc-grad-deg: 160deg;
@@ -46,7 +47,13 @@
   }
 }
 
+/*ta bort*/
+.account_border{
+  border: 4px solid black;
+}
+
 .account-bg {
+  border: 4px solid red;
   position: relative;
   padding-top: 10rem;
   background: linear-gradient(
@@ -88,6 +95,8 @@
       hsla(var(--hue-5), 40%, 60%, 1),
       hsla(var(--hue-5), 40%, 60%, 0) 70%
     );
+
+    
   transition: all 300ms ease-in-out;
 }
 .account-mail-btn {
@@ -140,3 +149,13 @@
   border-radius: 100vmax;
   mix-blend-mode: soft-light;
 }
+
+
+
+
+
+
+
+
+
+

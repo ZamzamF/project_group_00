@@ -7,7 +7,8 @@
       hsl(var(--hue-1), 50%, 15%) 0%, hsl(var(--hue-1), 80%, 10%) 100%);
 }
 
-.home-arrow {
+.home-arrow { /*är figuren framför texten*/
+  
   @media (width < 480px) {
     & h3 {
       position: relative;
@@ -63,4 +64,5 @@
 
 .home-paragraph {
   max-width: 70ch;
+ 
 }

@@ -27,6 +27,9 @@
   --p-23: calc(var(--p-local) * 23);
   --p-24: calc(var(--p-local) * 24);
   --p-25: calc(var(--p-local) * 25);
+
+  /*Tilligt*/
+  --p-40: calc(var(--p-local) * 40);
 }
 .p-0 {
   padding: var(--p-0);
@@ -262,6 +265,8 @@
 .px-25 {
   padding-inline: var(--p-25);
 }
+
+
 .pt-0 {
   padding-block-start: var(--p-0);
 }
@@ -340,6 +345,20 @@
 .pt-25 {
   padding-block-start: var(--p-25);
 }
+
+/*tillagd*/
+.pt-40{
+  /*10rem*/
+  padding-block-start: var(--p-40);
+}
+
+/*ändra??*/
+.pb-40{
+  padding-block-end: 30rem;
+
+}
+
+
 .pr-0 {
   padding-inline-end: var(--p-0);
 }

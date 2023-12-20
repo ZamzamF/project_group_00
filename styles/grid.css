@@ -16,6 +16,8 @@
   grid-template-columns: none;
   grid-auto-flow: column;
 }
+
+/*----grid-gap definitians for mobile*/
 .gap-0 {
   grid-gap: 0;
 }
@@ -34,6 +36,8 @@
 .gap-5 {
   grid-gap: 3rem;
 }
+
+/*---Column end values for mobil*/
 .col-auto {
   grid-column-end: auto;
 }
@@ -73,6 +77,8 @@
 .col-12 {
   grid-column-end: span 12;
 }
+
+/*----Column start values for mobile*/
 .offset-0 {
   grid-column-start: auto;
 }
@@ -112,6 +118,8 @@
 .offset-12 {
   grid-column-start: 13;
 }
+
+/*Justify content values*/
 .jc-start {
   justify-content: start;
 }
@@ -130,6 +138,8 @@
 .jc-evenly {
   justify-content: space-evenly;
 }
+
+/*Justify item values*/
 .ji-start {
   justify-items: start;
 }
@@ -139,6 +149,8 @@
 .ji-end {
   justify-items: end;
 }
+
+/*Justify self values*/
 .js-auto {
   justify-self: auto;
 }
@@ -151,6 +163,8 @@
 .js-end {
   justify-self: end;
 }
+
+/*Align item values*/
 .ai-start {
   align-items: start;
 }
@@ -160,6 +174,8 @@
 .ai-end {
   align-items: end;
 }
+
+/*Align self values*/
 .as-auto {
   align-self: auto;
 }
@@ -172,6 +188,8 @@
 .as-end {
   align-self: end;
 }
+
+/*Values for grid- properties for different breakpoints*/
 @media only screen and (min-width: 400px) {
   .grid-xxs {
     display: grid;

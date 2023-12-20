@@ -4,6 +4,7 @@
   margin-right: auto;
   margin-left: auto;
   transition: padding 300ms ease-in-out;
+ 
 }
 .container--bg-frost::before,
 .container--bg-clouds::before,
