@@ -47,13 +47,9 @@
   }
 }
 
-/*ta bort*/
-.account_border{
-  border: 4px solid black;
-}
 
 .account-bg {
-  border: 4px solid red;
+  
   position: relative;
   padding-top: 10rem;
   background: linear-gradient(

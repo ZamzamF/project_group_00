@@ -51,8 +51,8 @@ Gradiant 7:
 }
 
 
-
 */
+
 
 
 
@@ -79,19 +79,59 @@ Gradiant 7:
     linear-gradient(hsla(24, 40%, 60%, 1), hsl(24, 40%, 60%, 0) 70%);
     
 }
-
 .test-bg {
     background: linear-gradient( to bottom, #182738, #545177, #796796, #8D719D, #A878A8);
-    clip-path: polygon(50% 0%, 100% 0, 100% 68%, 0 100%, 0 0);
-
-       
+    
+    
 }
 
 
+.img-test{
+    
+    
+    
+}
 
 
 /*------- The actual styling for the page--*/
 
+.service-bg{ 
+    background:
+    linear-gradient(hsla(208, 50%, 15%, 1) 2%, hsla(208, 50%, 15%, 0) 50%),
+    
+    linear-gradient(0deg,  hsla(328, 70%, 75%, 1), hsla(328, 70%, 75%, 0) 70%),
 
+    linear-gradient(45deg,  hsla(328, 40%, 60%, 1), hsla(328, 40%, 60%, 0) 60%),
+
+    linear-gradient(90deg, hsla(328, 40%, 60%, 1), hsla(328, 40%, 60%, 0) 70%),
+
+    linear-gradient(135deg,  hsla(328, 60%, 90%, 1), hsla(328, 60%, 90%, 0) 70%),
+
+    linear-gradient(180deg, var(--white), hsla(24, 40%, 60%, 1), hsla(24, 40%, 60%, 0) 70%);
+  
+    transition: all 300ms ease-in-out;
+    padding-top: 10rem;
+    padding-block-end: 10rem;
+
+}
+
+.service-page-skew{
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - (100vw * .1)),
+        0 100%
+      );
+      transition: clip-path 500ms ease-in-out;
+
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    .service-page-skew {
+        padding-block-end: calc(100vw * .10);
+    }
+  }
 
 
