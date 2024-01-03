@@ -86,13 +86,6 @@ Gradiant 7:
 }
 
 
-.img-test{
-    
-    
-    
-}
-
-
 /*------- The actual styling for the page--*/
 
 .service-bg{ 
@@ -128,10 +121,21 @@ Gradiant 7:
 
 
 
+
+
 @media only screen and (min-width: 1200px) {
     .service-page-skew {
         padding-block-end: calc(100vw * .10);
     }
+  }
+
+  
+  .test-color{
+    color: hsl(var(--hue-3), 50%, 40%);
+  }
+
+  .test_color_2{
+    color: #212226;
   }
 
 
