@@ -1,94 +1,5 @@
 
-
-
-/*
-
-Gradiant 1: 
-{
-    Color-1: HSL(328, 40%, 75%, 0) invisible-bright-pink #d9a6c1 at 28%
-   
-}
-
-
-Gradiant 2: 
-{
-    Color-2: HSL(208, 50%, 15%, 1) light-navy #132839 at 2%
-    Color-3: HSL(208, 50%, 15%, 0) invisible-light-navy #132839 at 30%
-}
-
-
-Gradiant 3: 
-{
-    Color-4: HSL(328, 70%, 75%, 1) light-pink #ec93c2 
-    Color-5: HSL(328, 70%, 75%, 0) invisible light-pink  #ec93c2 at 70%
-}
-
-
-Gradiant 4: 
-{
-    Color-6: HSL(328, 40%, 60%, 1) light-me-Pink #c2709c  
-    Color-7: HSL(328, 40%, 60%, 0) invisble-light-me-Pink #c2709c at 70%
-}
-
-
-Gradiant 5: 
-{
-    Color-8: HSL(328, 40%, 60%, 1) light-me-Pink #c2709c  
-    Color-9: HSL(328, 40%, 60%, 0) invisble-light-me-Pink #c2709c at 70%
-}
-
-
-Gradiant 6: 
-{
-    Color-10: HSL(328, 60%, 90%, 1) very-light-pink #f5d6e7 
-    Color-11: HSL(328, 60%, 90%, 0) invisible-very-light-pink #f5d6e7  at 70%
-}
-
-Gradiant 7: 
-{
-    Color-12: HSL(24, 40%, 60%, 1) coral #c29170
-    Color-13: HSL(24, 40%, 60%, 0) invisble-coral #c29170 at 70%
-}
-
-
-*/
-
-
-
-
-/*---playing around with the colors for the background--*/
-
-.section-header-service {
-    height: 50vh;
-   
-
-    background: 
-    /* gradient  1*/
-    linear-gradient(160deg,hsla(328, 40%, 75%, 0) 28%, var(--white) 28.1%) ,
-     /* gradient  2*/
-    linear-gradient( hsla(208, 50%, 15%, 1) 2%, hsla(208, 50%, 15%, 1) 30%),
-    /* gradient  3*/
-    linear-gradient(hsla(328, 70%, 75%, 1), hsla(328, 70%, 75%, 0) 70%),
-    /* gradient  4*/
-    linear-gradient(hsla(328, 40%, 60%, 1), hsla(328, 40%, 60%, 0) 70%),
-    /* gradient  5*/
-    linear-gradient(hsla(328, 40%, 60%, 1), hsla(328, 40%, 60%, 0) 70%),
-    /* gradient  6*/
-    linear-gradient(hsla(328, 60%, 90%, 1), hsl(328, 60%, 90%, 0) 70%),
-    /* gradient  7*/
-    linear-gradient(hsla(24, 40%, 60%, 1), hsl(24, 40%, 60%, 0) 70%);
-    
-}
-.test-bg {
-    background: linear-gradient( to bottom, #182738, #545177, #796796, #8D719D, #A878A8);
-    
-    
-}
-
-
-/*------- The actual styling for the page--*/
-
-.service-bg{ 
+.service-header-bg{ 
     background:
     linear-gradient(hsla(208, 50%, 15%, 1) 2%, hsla(208, 50%, 15%, 0) 50%),
     
@@ -105,10 +16,11 @@ Gradiant 7:
     transition: all 300ms ease-in-out;
     padding-top: 10rem;
     padding-block-end: 10rem;
-
 }
 
-.service-page-skew{
+
+
+.service-header-skew{
     clip-path: polygon(
         0 0,
         100% 0,
@@ -119,11 +31,8 @@ Gradiant 7:
 }
 
 
-
-
-
 @media only screen and (min-width: 1200px) {
-    .service-page-skew {
+    .service-header-skew {
         padding-block-end: calc(100vw * .10);
     }
   }
@@ -137,4 +46,8 @@ Gradiant 7:
     color: #212226;
   }
 
+  .testtttttt {
+    background: hsl(var(--hue-1), 50%, 15%);
+
+  }
 

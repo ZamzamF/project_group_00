@@ -54,7 +54,7 @@
 
 </head>
 
-<body>
+<body class="">
 
     <!--Site header -->
     <header class="site-header">
@@ -79,19 +79,17 @@
     </header>
 
 
-    <main>
-        <!--section header-->
-       <section class="container service-bg service-page-skew" >
-         <header class="grid-flow-row grid-flow-column-md gap-5 gap-md-5 " >
+    <main >
+        <!--Page header-->
+       <section class="container service-header-bg service-header-skew" >
+         <header class="grid-flow-row grid-flow-column-md gap-5 gap-md-5">
 
           <!--box 1 text-->
           <div class="col-md-6" >
-            <div class="">
               <h2 class="f-size-medium c3-100-80 mb-5"> Elevate Your Business with Data Excellence.</h2>
-              <p class="f-size-smallest  c1-70-90 ">
+              <p class="f-size-smallest c1-70-90">
                 At VAST, we transform data complexity into actionable insights, empowering business success with tailored solutions that anticipate challenges and define the future.
               </p>
-            </div>
           </div>
           
           <!--box 2 img-->
@@ -111,11 +109,11 @@
 
 
         <!-- services section-->
-        <section class=" container ">
-          <h2 class="text-center mt-20 mb-35 f-size-very-small"><span class="c3-100-80 f-size-large">V</span>ast’s Core Offerings</h3>
+        <section class="container" aria-labelledby="featured services">
+          <h2 class="text-center  mb-35 f-size-very-small "><span class="c3-100-80 f-size-large">V</span>ast’s Core Offerings</h3>
 
           <!--Grid container-->
-          <div  class="grid-flow-row grid-md gap-md-5 mb-20">
+          <div  class="grid-flow-row grid-md gap-md-5 mb-20 ">
             <!--box-1-->
             <div class="col-md-12 grid-md gap-md-3 mb-35">
 
@@ -159,25 +157,26 @@
 
 
         <!-- why-us section-->
-        <section class="container container--bg-sea-spray container--bg-blur-4 container--bg-success-gradient container--bg-blend-color  service-page-skew">
+        <section class="container container--bg-sea-spray container--bg-blur-4 container--bg-danger-gradient container--bg-blend-color container--skew-left" aria-labelledby="service ranking">
 
-          <div class="mt-35">
+          <div class="">
             <p class="f-size-smallest c-white">Best software</p>
             <h3 class="mb-35 f-size-very-small test-color">Why choose VAST</h3>
           </div>
          
           <!--Grid container-->
-          <div class="grid-flow-row grid-md gap-md-5  mb-40"  >
+          <div class="grid-flow-row grid-md gap-md-5 "  >
 
           <!--box 1 - lightbulb-->
-          <div class="col-md-6 grid-md gap-md-5 mb-50 ai-center-md" >
-            <img class="col-md-3"  src="img/informative/icons/lightbulb_icon.svg" alt="">
+          <div class="col-md-6 grid-md gap-md-5">
+            <div class="col-md-3" >
+              <img  src="img/informative/icons/lightbulb_icon.svg" alt="">
+            </div>
             
             <div class="col-md-9 ">
               <h4 class="mb-4 f-size-very-small c-white">Crafting Solutions for Your Unique Needs</h4>
             <p class="pt-9 f-size-smallest test_color_2">Our commitment to customizing solutions based on your unique needs ensures that you receive precisely what your business requires for success. </p>
             </div>
-
           </div>
 
           <!--box 2 - team-->
@@ -216,26 +215,18 @@
 
         </section>
 
+        
 
         <!-- call-to-action section-->
-        <section class="container container--bg-sea-spray container--bg-blur-4 container--bg-danger-gradient container--bg-blend-color container--skew-right">
-          
-
-            <div class="text-center">
-              <h3 class="f-size-large c-white">Let's Discuss Your Data Needs</h3>
-              <p class="f-size-smallest test-color">Vast. Elevate Your Business – One Insight at a Time.</p>
-               <a href="#" class="social-media d-inline-block oflow-hidden br-03 trst-short" rel="noopener" title="Contact us">Contact us</a>
-
-            </div>
-
-          
-
+        <section class="container" aria-labelledby="call to action">
+          <div class="text-center">
+            <h3 class="f-size-large mt-35">Let's Discuss Your Data Needs</h3>
+            <p class="f-size-smallest test-color">Vast. Elevate Your Business – One Insight at a Time.</p>
+             <button class="btn btn--primary mt-5">
+              <a href="#" rel="noopener" title="Contact us">Contact us</a>
+             </button>
+          </div>
         </section>
-
-        
-       
-
-
 
     </main>
 

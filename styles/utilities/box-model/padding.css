@@ -346,12 +346,13 @@
   padding-block-start: var(--p-25);
 }
 
-/*tillagd
+/*tillagd*/
 .pt-40{
   
-  padding-block-start: var(--p-40);
+  /*padding-block-start: var(--p-40);*/
+  padding-block-start: 20rem;
 }
-*/
+
 
 /*ändra??*/
 .pb-40{

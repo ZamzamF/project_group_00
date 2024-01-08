@@ -1,19 +1,19 @@
 .btn{
     min-width: 104px;
-    border-radius: 4px;
+    border-radius: .4rem;
     border: none;
-    padding: 12px 20px;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-
-    width: 5.5rem;
-
+    font-weight: 700;
+    padding: 1rem 2rem;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    
     
 
 }
 
 .btn--primary {
-    fill: hsl(var(--hue-3), 20%, 90%);
-   
-    box-shadow: 0 0 0 2pt ;
-
+    background-color: hsl(var(--hue-3), 20%, 90%);
+    color:  hsl(var(--hue-1), 50%, 15%);
+    box-shadow: 0 0 0 1pt hsl(var(--hue-1), 50%, 15%);
 }
