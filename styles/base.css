@@ -1,6 +1,7 @@
 html {
   font-size: var(--remSize);
   color: var(--black);
+  scroll-behavior: smooth;
 }
 body {
   font-size: var(--fontStd);

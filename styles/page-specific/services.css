@@ -1,3 +1,15 @@
+/* Initial state of the sections */
+.fade-in-section {
+    opacity: 0;
+    transition: opacity 1s ease-out; /* Adjust the duration and easing as needed */
+}
+
+/* Apply the fade-in effect when the 'active' class is present */
+.fade-in-section.active {
+    opacity: 1;
+}
+
+
 
 .service-header-bg{ 
     background:
@@ -18,8 +30,6 @@
     padding-block-end: 10rem;
 }
 
-
-
 .service-header-skew{
     clip-path: polygon(
         0 0,
@@ -30,6 +40,19 @@
       transition: clip-path 500ms ease-in-out;
 }
 
+.section-icon{
+    width: 13%;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: var(--white);
+
+    svg{
+        transform: translateY(5px);
+    }
+}
+
 
 @media only screen and (min-width: 1200px) {
     .service-header-skew {
@@ -37,17 +60,18 @@
     }
   }
 
+  @media only screen and (min-width: 769px) and (max-width: 1535px) {
+    .section-icon {
+        width: 10%;
+    }
+}
+
+@media only screen and (min-width: 1536px) {
+    .section-icon {
+        width: 8%;
+    }
+}
   
-  .test-color{
-    color: hsl(var(--hue-3), 50%, 40%);
-  }
 
-  .test_color_2{
-    color: #212226;
-  }
-
-  .testtttttt {
-    background: hsl(var(--hue-1), 50%, 15%);
-
-  }
+  
 
