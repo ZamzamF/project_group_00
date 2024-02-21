@@ -5,28 +5,24 @@ function memberThumbnail(member) {
     
     <div class=" br-1 col-12 col-xs-6 col-md-4 col-lg-3 col-xxl-2 gap-2 " >
     
-      <div class=" test_overlay thumbnail_border thumbnail_br">
+      <div class="thumbnail_overlay thumbnail_border thumbnail_br">
         <!------ Card Img ------>
-        <img class="testtest"
+        <img
         
             srcset="
                     ./img/informative/member/${member.id}/webp/${member.id}_256.webp 256w,
-                    
                     ./img/informative/member/${member.id}/webp/${member.id}_512.webp 512w,
-                    
                     ./img/informative/member/${member.id}/webp/${member.id}_860.webp 860w,
-                    
                     ./img/informative/member/${member.id}/webp/${member.id}_1024.webp 1024w,
-                    
                     ./img/informative/member/${member.id}/webp/${member.id}_2048.webp 2048w"
 
-            (max-width: 400px) 100vw,
-            (max-width: 480px) 50vw,
-            (max-width: 512px) 100vw,
-            (max-width: 768px) 100vw,
-            (max-width: 996px) 100vw,
-            (max-width: 1280px) 50vw,
-            33.33vw"
+                    sizes="
+                    (max-width: 400px) 512px,
+                    (max-width: 480px) 50vw,
+                    (max-width: 512px) 100vw,
+                    (max-width: 768px) 33vw,
+                    (min-width: 996px) 25vw,
+                    
             
             
              src="./img/informative/member/${member.id}/webp/${member.id}_512.webp"
@@ -35,15 +31,12 @@ function memberThumbnail(member) {
             
             srcset="
                     ./img/informative/member/${member.id}/jpg/${member.id}_256.jpg 256w,
-                    
                     ./img/informative/member/${member.id}/jpg/${member.id}_512.jpg 512w,
-                    
                     ./img/informative/member/${member.id}/jpg/${member.id}_860.jpg 768,
-                    
                     ./img/informative/member/${member.id}/jpg/${member.id}_1024.jpg 1024w,
-                    
                     ./img/informative/member/${member.id}/jpg/${member.id}_2048.jpg 2048w"
-            
+                    
+                    sizes="
                     (max-width: 400px) 100vw,
                     (max-width: 480px) 50vw,
                     (max-width: 512px) 100vw,
@@ -53,18 +46,16 @@ function memberThumbnail(member) {
                     33.33vw"
             
             src="./img/informative/member/${member.id}/jpg/${member.id}_512.jpg"
-            
                     width="512" height="512"
-            
                     alt="Image of ${member.first_name} ${member.last_name}">
         
             <!------ Overlay div ------>
         
-            <div class = "thumbnail_overlay_box">
+            <div class = "thumbnail_overlay_box"> 
             
-                <p class="overlay_name"> ${member.first_name} ${member.last_name}</p>
+                <p class="thumbnail_name"> ${member.first_name} ${member.last_name}</p>
                 
-                <span class="overlay_email">${member.mail}@du.se</span>
+                <span class="thumbnail_email">${member.mail}@du.se</span>
             
             </div>
         </div>

@@ -1,6 +1,6 @@
 .thumbnail_border {
     border: 0.4rem solid hsl(var(--base-hue-1), 20%, 20%);  
- }
+}
     
 .thumbnail_br {
     border-radius: 1rem;
@@ -18,20 +18,21 @@
     z-index: 1;
 }
     
-.overlay_name {
+.thumbnail_name {
     position: absolute;
     left: 3%; 
     font-size: 1.5rem;
+    padding-block-start: 0.4rem;
 }
 
-    .overlay_email{
-    position: absolute;
-    bottom: 10%;
-    right: 3%;
-    font-style: italic;
-    font-size: 1.3rem;
-    
-    }
+.thumbnail_email{
+position: absolute;
+bottom: 10%;
+right: 3%;
+font-style: italic;
+font-size: 1.3rem;
+
+}
     
     @media screen and (min-width: 768px){
     
@@ -40,7 +41,7 @@
     opacity: 0;
     }
     
-    .thumnnail_overlay:hover .thumbnail_overlay_box {
+    .thumbnail_overlay:hover .thumbnail_overlay_box {
     
     display: block;
     opacity: 0.9;
@@ -51,7 +52,7 @@
     height: 25%;
     }
     
-    .thumnnail_overlay:hover {
+    .thumbnail_overlay:hover {
     
     transform: scale(1.08);
     
@@ -59,7 +60,7 @@
     
     }
     
-    .thumnnail_overlay:hover::before{
+    .thumbnail_overlay:hover::before{
     
     content: "";
     
@@ -82,19 +83,30 @@
     mix-blend-mode: multiply;
     
     }
+
+    .thumbnail_name{
     
+        font-weight: 1.3rem;
+        
+    }
+    .thumbnail_email{
+        font-size: 1.1rem;
+        
+    }
+        
+        
     }
     
     @media screen and (min-width: 1366px) {
     
-    .overlay_name{
+    .thumbnail_name{
     
     font-size: 1rem;
     
     }
     
-    .overlay_email{
-    font-size: 1rem;
+    .thumbnail_email{
+    font-size: .8rem;
     }
     }
  /*testtttttt*/
