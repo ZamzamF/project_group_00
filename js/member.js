@@ -19,12 +19,15 @@ function memberThumbnail(member) {
                     ./img/informative/member/${member.id}/webp/${member.id}_1024.webp 1024w,
                     
                     ./img/informative/member/${member.id}/webp/${member.id}_2048.webp 2048w"
+
+            (max-width: 400px) 100vw,
+            (max-width: 480px) 50vw,
+            (max-width: 512px) 100vw,
+            (max-width: 768px) 100vw,
+            (max-width: 996px) 100vw,
+            (max-width: 1280px) 50vw,
+            33.33vw"
             
-            sizes="(min-width: 1366px) 16vw,
-                    (min-width: 996px) 25vw,
-                    (min-width: 768px) 33vw,
-                    (min-width: 480px) 50vw,
-                    (min-width: 392px) 100vw"
             
              src="./img/informative/member/${member.id}/webp/${member.id}_512.webp"
             
@@ -41,12 +44,13 @@ function memberThumbnail(member) {
                     
                     ./img/informative/member/${member.id}/jpg/${member.id}_2048.jpg 2048w"
             
-            sizes="
-            (min-width: 1366px) 16vw,
-            (min-width: 996px) 25vw,
-            (min-width: 768px) 33vw,
-            (min-width: 480px) 50vw,
-            (min-width: 392px) 100vw"
+                    (max-width: 400px) 100vw,
+                    (max-width: 480px) 50vw,
+                    (max-width: 512px) 100vw,
+                    (max-width: 768px) 100vw,
+                    (max-width: 996px) 100vw,
+                    (max-width: 1280px) 50vw,
+                    33.33vw"
             
             src="./img/informative/member/${member.id}/jpg/${member.id}_512.jpg"
             
